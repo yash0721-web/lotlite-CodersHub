@@ -51,8 +51,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold mb-6">Code Smarter with Real-World Practice</h2>
-            <p className="text-lg text-gray-600">
-              At CodersHub, you don't just learn code — you engage in practical exercises that reflect real-world scenarios. 
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              At CodersHub, you don&apos;t just learn code — you engage in practical exercises that reflect real-world scenarios. 
               From beginner-friendly lessons to advanced courses trusted by professionals, we prepare you for real-world projects.
             </p>
           </div>

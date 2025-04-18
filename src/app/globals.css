@@ -24,3 +24,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Hide all Next.js development indicators */
+[data-nextjs-dialog-overlay],
+[data-nextjs-dialog],
+#__next-build-watcher,
+#NextJSDevIndicator,
+[data-nextjs-terminal],
+[data-nextjs-terminal-button],
+div[data-nextjs-terminal],
+div[data-nextjs-terminal-button],
+div[role="dialog"][data-nextjs-dialog],
+div[role="button"][data-nextjs-terminal-button],
+div[data-nextjs-build-indicator],
+div[data-nextjs-build-indicator-position] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  z-index: -9999 !important;
+}

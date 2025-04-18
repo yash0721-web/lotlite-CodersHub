@@ -48,6 +48,9 @@ export default function RootLayout({
                   <Link href="/notes" className="text-gray-600 hover:text-blue-600 transition">
                     Notes
                   </Link>
+                  <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition">
+                    Contact
+                  </Link>
                 </div>
               </div>
 
