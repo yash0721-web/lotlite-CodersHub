@@ -44,6 +44,9 @@ export default function Navbar() {
               CodersHub
             </Link>
             <div className="hidden md:flex space-x-6">
+              <Link href="/" className={`${isScrolled ? 'text-gray-700 hover:text-indigo-600' : 'text-white hover:text-amber-300'} transition-all duration-300 font-medium`}>
+                Home
+              </Link>
               <Link href="/courses" className={`${isScrolled ? 'text-gray-700 hover:text-indigo-600' : 'text-white hover:text-amber-300'} transition-all duration-300 font-medium`}>
                 Courses
               </Link>
@@ -124,6 +127,9 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg">
             <div className="flex flex-col space-y-4 p-4">
+              <Link href="/" className="text-gray-700 hover:text-indigo-600 transition-all duration-300 font-medium">
+                Home
+              </Link>
               <Link href="/courses" className="text-gray-700 hover:text-indigo-600 transition-all duration-300 font-medium">
                 Courses
               </Link>

@@ -102,7 +102,6 @@ export default function Home() {
 
       {/* Why Choose Us Section */}
       <section className="py-24 bg-gradient-to-r from-indigo-900 to-purple-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">Why Choose CodersHub?</h2>
@@ -194,7 +193,6 @@ export default function Home() {
       
       {/* Companies Section */}
       <section className="py-24 bg-gradient-to-r from-indigo-900 to-purple-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">Our Students Work At</h2>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-12 items-center">
