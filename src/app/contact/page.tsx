@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function ContactPage() {
   return (
@@ -19,15 +20,17 @@ export default function ContactPage() {
         <div className="w-full bg-purple-100 rounded-lg overflow-hidden mb-12 shadow-md">
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2">
-              <img 
-                                src="/Images/Hero-Banner Contact.jpg" 
+              <Image 
+                src="/Images/Hero-Banner Contact.jpg" 
                 alt="Customer service representative on phone" 
+                width={800}
+                height={600}
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-full md:w-1/2 p-8 flex items-center">
               <div>
-                <h2 className="text-3xl font-bold text-purple-800 mb-4">We're Here To Help</h2>
+                <h2 className="text-3xl font-bold text-purple-800 mb-4">We&apos;re Here To Help</h2>
                 <p className="text-purple-700 mb-6">
                   Our dedicated support team is ready to assist you with any questions or concerns. 
                   Feel free to reach out through any of our contact channels below.
