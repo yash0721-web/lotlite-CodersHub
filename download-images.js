@@ -32,10 +32,7 @@ const images = [
   { url: 'https://placehold.co/400x400/4F46E5/FFFFFF/png?text=Testimonial+3', filename: 'Images/testimonial3.jpg' },
   { url: 'https://placehold.co/400x400/4F46E5/FFFFFF/png?text=Testimonial+4', filename: 'Images/testimonial4.jpg' },
   { url: 'https://placehold.co/400x400/4F46E5/FFFFFF/png?text=Testimonial+5', filename: 'Images/testimonial5.jpg' },
-  { url: 'https://placehold.co/400x400/4F46E5/FFFFFF/png?text=Testimonial+6', filename: 'Images/testimonial6.jpg' },
-  
-  // Grid SVG
-  { url: 'https://placehold.co/600x600/4F46E5/FFFFFF/svg?text=Grid+Pattern', filename: 'grid.svg' }
+  { url: 'https://placehold.co/400x400/4F46E5/FFFFFF/png?text=Testimonial+6', filename: 'Images/testimonial6.jpg' }
 ];
 
 // Function to download an image

@@ -218,9 +218,9 @@ export default function CoursesPage() {
                   placeholder="Search for courses, topics, or skills..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full px-6 py-4 pl-12 pr-4 rounded-full border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-300 shadow-lg"
+                  className="w-full px-6 py-4 pl-12 pr-4 rounded-full border-2 border-indigo-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-300 shadow-lg"
                 />
-                <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-xl" />
+                <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-indigo-500 text-xl" />
               </div>
             </div>
           </div>
@@ -228,7 +228,7 @@ export default function CoursesPage() {
       </section>
 
       {/* Filters Section */}
-      <section className="py-8 bg-white shadow-md sticky top-20 z-30">
+      <section className="py-8 bg-white shadow-md">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center space-x-2">
@@ -241,7 +241,7 @@ export default function CoursesPage() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 active:scale-95 ${
                     selectedCategory === category
                       ? "bg-indigo-600 text-white"
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -260,9 +260,8 @@ export default function CoursesPage() {
                 onChange={(e) => setActiveFilter(e.target.value)}
               >
                 <option value="all">All Courses</option>
-                <option value="featured">Featured</option>
-                <option value="newest">Newest</option>
                 <option value="popular">Most Popular</option>
+                <option value="recent">Most Recent</option>
                 <option value="price-low">Price: Low to High</option>
                 <option value="price-high">Price: High to Low</option>
               </select>
@@ -438,7 +437,6 @@ export default function CoursesPage() {
 
       {/* Tech Stack Section */}
       <section className="py-16 bg-gradient-to-r from-indigo-900 to-purple-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">Technologies You'll Learn</h2>
           
