@@ -255,6 +255,7 @@ export default function CoursesPage() {
             <div className="flex items-center space-x-2">
               <span className="font-medium text-gray-700">Sort by:</span>
               <select 
+                title="Sort by"
                 className="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 value={activeFilter}
                 onChange={(e) => setActiveFilter(e.target.value)}

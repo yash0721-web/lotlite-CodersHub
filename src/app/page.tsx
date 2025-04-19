@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link';
 import { FaAmazon, FaGoogle, FaMicrosoft, FaPaypal, FaGithub, FaYoutube, FaTwitter, FaLinkedin, FaArrowRight, FaCheckCircle, FaLaptopCode, FaCode, FaDatabase, FaBrain, FaRocket, FaUsers, FaBook, FaCertificate } from 'react-icons/fa';
 import { SiGoldmansachs, SiHitachi, SiJavascript, SiPython, SiReact, SiNodedotjs, SiMongodb, SiDocker } from 'react-icons/si';
@@ -63,38 +65,68 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-amber-100 group">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-400 to-yellow-300 rounded-2xl flex items-center justify-center mb-6 mx-auto transform rotate-3 group-hover:rotate-6 transition-transform">
-                <FaCode className="w-10 h-10 text-indigo-900" />
+            <div className="p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-amber-100 group">
+              <div className="w-full h-64 rounded-t-2xl flex items-center justify-center overflow-hidden">
+                <video 
+                  src="/Images/web dev.mp4" 
+                  className="w-full h-full object-contain"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  ref={(video) => {
+                    if (video) {
+                      video.playbackRate = 1.0;
+                    }
+                  }}
+                />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-indigo-900">Web Development</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">Learn HTML, CSS, JavaScript and modern frameworks to build responsive websites and web applications.</p>
-              <Link href="/web-development" className="text-amber-500 font-semibold hover:text-amber-600 transition flex items-center justify-center group">
-                Learn More 
-                <FaArrowRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
-              </Link>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-4 text-indigo-900">Web Development</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">Learn HTML, CSS, JavaScript and modern frameworks to build responsive websites and web applications.</p>
+                <Link href="/web-development" className="text-purple-600 hover:text-purple-700 font-semibold transition flex items-center justify-center group">
+                  Learn More 
+                  <FaArrowRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
-            <div className="p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-yellow-100 group">
-              <div className="w-20 h-20 bg-gradient-to-br from-yellow-400 to-amber-300 rounded-2xl flex items-center justify-center mb-6 mx-auto transform -rotate-3 group-hover:-rotate-6 transition-transform">
-                <FaDatabase className="w-10 h-10 text-indigo-900" />
+            <div className="p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-yellow-100 group">
+              <div className="w-full h-64 rounded-t-2xl flex items-center justify-center overflow-hidden">
+                <video 
+                  src="/Images/AI&ML.mp4" 
+                  className="w-full h-full object-contain"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  ref={(video) => {
+                    if (video) {
+                      video.playbackRate = 1.0;
+                    }
+                  }}
+                />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-indigo-900">Data Science & AI</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">Master Python, data analysis, machine learning and artificial intelligence with hands-on projects.</p>
-              <Link href="/data-science" className="text-amber-500 font-semibold hover:text-amber-600 transition flex items-center justify-center group">
-                Learn More 
-                <FaArrowRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
-              </Link>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-4 text-indigo-900">AI & ML</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">Master Python, data analysis, machine learning and artificial intelligence with hands-on projects.</p>
+                <Link href="/data-science" className="text-purple-600 hover:text-purple-700 font-semibold transition flex items-center justify-center group">
+                  Learn More 
+                  <FaArrowRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
-            <div className="p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-amber-100 group">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-400 to-yellow-300 rounded-2xl flex items-center justify-center mb-6 mx-auto transform rotate-3 group-hover:rotate-6 transition-transform">
-                <FaBrain className="w-10 h-10 text-indigo-900" />
+            <div className="p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-amber-100 group">
+              <div className="w-full h-64 rounded-t-2xl flex items-center justify-center overflow-hidden bg-gray-100">
+                <p className="text-gray-500"></p>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-indigo-900">Data Structures & Algorithms</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">Learn DSA and crack interviews at top companies like Google and Microsoft.</p>
-              <Link href="/dsa" className="text-amber-500 font-semibold hover:text-amber-600 transition flex items-center justify-center group">
-                Learn More 
-                <FaArrowRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
-              </Link>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-4 text-indigo-900">Data Structures & Algorithms</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">Learn DSA and crack interviews at top companies like Google and Microsoft.</p>
+                <Link href="/dsa" className="text-purple-600 hover:text-purple-700 font-semibold transition flex items-center justify-center group">
+                  Learn More 
+                  <FaArrowRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -334,6 +334,7 @@ export default function NotesPage() {
             <div className="flex items-center space-x-2">
               <span className="font-medium text-gray-700">Sort by:</span>
               <select 
+                title="Sort notes by"
                 className="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 value={activeFilter}
                 onChange={(e) => setActiveFilter(e.target.value)}
@@ -378,6 +379,7 @@ export default function NotesPage() {
                     </div>
                     <div className="flex space-x-2">
                       <button
+                        title={`${note.isLiked ? 'Unlike' : 'Like'} note`}
                         onClick={() => handleLikeToggle(note.id)}
                         className={`p-2 rounded-full ${
                           note.isLiked ? 'text-red-500' : 'text-gray-400'
@@ -386,6 +388,7 @@ export default function NotesPage() {
                         <FaHeart />
                       </button>
                       <button
+                        title={`${note.isBookmarked ? 'Remove bookmark' : 'Bookmark'} note`}
                         onClick={() => handleBookmarkToggle(note.id)}
                         className={`p-2 rounded-full ${
                           note.isBookmarked ? 'text-blue-500' : 'text-gray-400'
@@ -449,6 +452,7 @@ export default function NotesPage() {
               <div className="flex justify-between items-center">
                 <h3 className="text-2xl font-bold text-indigo-900">Create New Note</h3>
                 <button 
+                  title="Close modal"
                   onClick={() => setShowCreateModal(false)}
                   className="text-gray-500 hover:text-gray-700"
                 >
@@ -470,7 +474,10 @@ export default function NotesPage() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Category</label>
-                  <select className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                  <select 
+                    title="Select note category"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  >
                     <option value="">Select a category</option>
                     {categories.filter(cat => cat !== "All Notes").map(category => (
                       <option key={category} value={category}>{category}</option>
