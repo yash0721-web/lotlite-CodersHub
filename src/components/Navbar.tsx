@@ -3,11 +3,13 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FaSearch, FaBars, FaTimes } from 'react-icons/fa';
+import { useRouter } from 'next/navigation';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const router = useRouter();
 
   // Handle scroll effect
   useEffect(() => {
@@ -26,8 +28,10 @@ export default function Navbar() {
   // Handle search submission
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    // Implement search functionality here
-    console.log('Searching for:', searchQuery);
+    if (searchQuery.trim()) {
+      // Redirect to search results page with query parameter
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    }
   };
 
   return (
@@ -77,20 +81,22 @@ export default function Navbar() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-64 px-4 py-2 pl-10 pr-4 rounded-full border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-300 shadow-sm"
                 />
-                <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
+                <button type="submit" className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
+                  <FaSearch />
+                </button>
               </div>
             </form>
 
             {/* Login/Signup Buttons */}
             <div className="hidden md:flex items-center space-x-3">
               <Link 
-                href="/login" 
+                href="/auth" 
                 className={`${isScrolled ? 'text-indigo-600 hover:text-indigo-800' : 'text-white hover:text-amber-300'} transition-all duration-300 font-medium`}
               >
                 Login
               </Link>
               <Link 
-                href="/signup" 
+                href="/auth?tab=signup" 
                 className="bg-gradient-to-r from-amber-400 to-yellow-300 text-indigo-900 px-5 py-2 rounded-full hover:from-amber-500 hover:to-yellow-400 transition-all duration-300 font-medium shadow-md hover:shadow-lg"
               >
                 Sign Up
@@ -118,7 +124,9 @@ export default function Navbar() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full px-4 py-2 pl-10 pr-4 rounded-full border border-gray-300 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all duration-300 shadow-sm"
               />
-              <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
+              <button type="submit" className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
+                <FaSearch />
+              </button>
             </div>
           </form>
         </div>
@@ -147,13 +155,13 @@ export default function Navbar() {
               </Link>
               <div className="flex items-center space-x-3 pt-2">
                 <Link 
-                  href="/login" 
+                  href="/auth" 
                   className="text-indigo-600 hover:text-indigo-800 transition-all duration-300 font-medium"
                 >
                   Login
                 </Link>
                 <Link 
-                  href="/signup" 
+                  href="/auth?tab=signup" 
                   className="bg-gradient-to-r from-amber-400 to-yellow-300 text-indigo-900 px-5 py-2 rounded-full hover:from-amber-500 hover:to-yellow-400 transition-all duration-300 font-medium shadow-md hover:shadow-lg"
                 >
                   Sign Up
