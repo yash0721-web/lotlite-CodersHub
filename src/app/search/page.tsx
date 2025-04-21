@@ -219,7 +219,7 @@ export default function SearchResults() {
           <div className="space-y-6">
             {results.map((result) => (
               <Link 
-                key={result.id} 
+                key={`${result.type}-${result.id}`} 
                 href={result.url}
                 className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >

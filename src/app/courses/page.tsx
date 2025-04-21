@@ -17,7 +17,7 @@ const courses = [
     students: 12500,
     duration: "48 hours",
     level: "Beginner to Advanced",
-    price: 149,
+    price: 499,
     category: "Web Development",
     tags: ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
     featured: true
@@ -32,7 +32,7 @@ const courses = [
     students: 9800,
     duration: "36 hours",
     level: "Intermediate",
-    price: 179,
+    price: 499,
     category: "Data Science",
     tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-learn", "TensorFlow"],
     featured: true
@@ -47,7 +47,7 @@ const courses = [
     students: 7500,
     duration: "24 hours",
     level: "Advanced",
-    price: 129,
+    price: 499,
     category: "Web Development",
     tags: ["React", "Redux", "TypeScript", "Next.js", "GraphQL"],
     featured: false
@@ -62,7 +62,7 @@ const courses = [
     students: 6200,
     duration: "30 hours",
     level: "Intermediate",
-    price: 159,
+    price: 499,
     category: "Mobile Development",
     tags: ["React Native", "JavaScript", "iOS", "Android", "Firebase"],
     featured: false
@@ -77,7 +77,7 @@ const courses = [
     students: 5300,
     duration: "42 hours",
     level: "Intermediate to Advanced",
-    price: 199,
+    price: 499,
     category: "DevOps",
     tags: ["Docker", "Kubernetes", "AWS", "CI/CD", "Terraform"],
     featured: true
@@ -92,7 +92,7 @@ const courses = [
     students: 4800,
     duration: "28 hours",
     level: "Beginner to Intermediate",
-    price: 149,
+    price: 499,
     category: "Cybersecurity",
     tags: ["Security", "Ethical Hacking", "Network Security", "Cryptography"],
     featured: false
@@ -107,7 +107,7 @@ const courses = [
     students: 8900,
     duration: "40 hours",
     level: "Intermediate",
-    price: 169,
+    price: 499,
     category: "Web Development",
     tags: ["MongoDB", "Express", "React", "Node.js", "JavaScript"],
     featured: true
@@ -122,7 +122,7 @@ const courses = [
     students: 4100,
     duration: "22 hours",
     level: "Beginner to Intermediate",
-    price: 99,
+    price: 499,
     category: "Design",
     tags: ["UI Design", "UX Design", "Figma", "Adobe XD", "Prototyping"],
     featured: false

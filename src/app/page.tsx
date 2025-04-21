@@ -65,7 +65,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-amber-100 group">
+            <div className="p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-amber-100 group flex flex-col">
               <div className="w-full h-64 rounded-t-2xl flex items-center justify-center overflow-hidden">
                 <video 
                   src="/Images/web dev.mp4" 
@@ -81,16 +81,16 @@ export default function Home() {
                   }}
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-4 text-indigo-900">Web Development</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">Learn HTML, CSS, JavaScript and modern frameworks to build responsive websites and web applications.</p>
-                <Link href="/web-development" className="text-purple-600 hover:text-purple-700 font-semibold transition flex items-center justify-center group">
+                <p className="text-gray-600 mb-6 leading-relaxed flex-grow">Learn HTML, CSS, JavaScript and modern frameworks to build responsive websites and web applications.</p>
+                <Link href="/web-development" className="text-purple-600 hover:text-purple-700 font-semibold transition flex items-center justify-center group mt-auto">
                   Learn More 
                   <FaArrowRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
-            <div className="p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-yellow-100 group">
+            <div className="p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-yellow-100 group flex flex-col">
               <div className="w-full h-64 rounded-t-2xl flex items-center justify-center overflow-hidden">
                 <video 
                   src="/Images/AI&ML.mp4" 
@@ -106,16 +106,16 @@ export default function Home() {
                   }}
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-4 text-indigo-900">AI & ML</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">Master Python, data analysis, machine learning and artificial intelligence with hands-on projects.</p>
-                <Link href="/data-science" className="text-purple-600 hover:text-purple-700 font-semibold transition flex items-center justify-center group">
+                <p className="text-gray-600 mb-6 leading-relaxed flex-grow">Master Python, data analysis, machine learning and artificial intelligence with hands-on projects.</p>
+                <Link href="/data-science" className="text-purple-600 hover:text-purple-700 font-semibold transition flex items-center justify-center group mt-auto">
                   Learn More 
                   <FaArrowRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
-            <div className="p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-amber-100 group">
+            <div className="p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-amber-100 group flex flex-col">
               <div className="w-full h-64 rounded-t-2xl flex items-center justify-center overflow-hidden bg-gray-100">
                 <img 
                   src="/Images/ds.jpg" 
@@ -123,10 +123,10 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-4 text-indigo-900">Data Structures & Algorithms</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">Learn DSA and crack interviews at top companies like Google and Microsoft.</p>
-                <Link href="/dsa" className="text-purple-600 hover:text-purple-700 font-semibold transition flex items-center justify-center group">
+                <p className="text-gray-600 mb-6 leading-relaxed flex-grow">Learn DSA and crack interviews at top companies like Google and Microsoft.</p>
+                <Link href="/dsa" className="text-purple-600 hover:text-purple-700 font-semibold transition flex items-center justify-center group mt-auto">
                   Learn More 
                   <FaArrowRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
                 </Link>
