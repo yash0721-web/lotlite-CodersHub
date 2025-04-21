@@ -259,8 +259,8 @@ export default function BlogPage() {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">
-              CodersHub Blog
+            <h1 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">
+              Vikash Tech Solutions Blog
             </h1>
             <p className="text-xl mb-8 text-amber-100">
               Explore the latest insights, tutorials, and best practices in software development.

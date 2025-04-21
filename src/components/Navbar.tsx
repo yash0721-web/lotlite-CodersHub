@@ -45,7 +45,7 @@ export default function Navbar() {
           {/* Logo and Main Links */}
           <div className="flex items-center space-x-8">
             <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent hover:from-amber-500 hover:to-yellow-400 transition-all duration-300">
-              CodersHub
+              Vikash Tech Solutions
             </Link>
             <div className="hidden md:flex space-x-6">
               <Link href="/" className={`${isScrolled ? 'text-gray-700 hover:text-indigo-600' : 'text-white hover:text-amber-300'} transition-all duration-300 font-medium`}>

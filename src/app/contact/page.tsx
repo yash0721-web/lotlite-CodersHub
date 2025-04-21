@@ -114,7 +114,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-purple-800">Email</h3>
-                  <p className="text-purple-700">support@codershub.com</p>
+                  <p className="text-purple-700">support@vikashtechsolutions.com</p>
                 </div>
               </div>
 

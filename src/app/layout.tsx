@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import WhatsAppButton from '../components/WhatsAppButton';
 import Link from 'next/link';
 
 const inter = Inter({
@@ -11,8 +12,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CodersHub - Learn Coding the Right Way",
-  description: "Learn coding with practical exercises and real-world projects",
+  title: "Vikash Tech Solutions - Learn Coding the Right Way",
+  description: "Learn coding with practical exercises and real-world projects.",
 };
 
 export default function RootLayout({
@@ -30,6 +31,9 @@ export default function RootLayout({
         <div className="pt-12">
           {children}
         </div>
+        
+        {/* WhatsApp Button */}
+        <WhatsAppButton />
         
         {/* Footer */}
         <footer className="bg-gray-900 text-white py-8">
@@ -97,8 +101,8 @@ export default function RootLayout({
                     <span>GitHub</span>
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-400 transition-all duration-300 group-hover:w-full"></span>
                   </a></li>
-                  <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="relative group hover:text-purple-400">
-                    <span>Twitter</span>
+                  <li><a href="https://www.linkedin.com/in/vikash-dubey-517461262/" target="_blank" rel="noopener noreferrer" className="relative group hover:text-purple-400">
+                    <span>LinkedIn</span>
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-400 transition-all duration-300 group-hover:w-full"></span>
                   </a></li>
                   <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="relative group hover:text-purple-400">

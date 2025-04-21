@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Privacy Policy | CodersHub',
-  description: 'Privacy policy for CodersHub platform and services.',
+  title: 'Privacy Policy | Vikash Tech Solutions',
+  description: 'Privacy policy for Vikash Tech Solutions platform and services.',
 };
 
 export default function PrivacyPage() {

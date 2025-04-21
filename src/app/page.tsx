@@ -16,10 +16,12 @@ export default function Home() {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-7xl font-bold mb-8 animate-fade-in bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">
-              Welcome to CodersHub
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">
+              Welcome to Vikash Tech Solutions
             </h1>
-            <p className="text-2xl mb-12 text-amber-100">Master the Art of Coding</p>
+            <p className="text-xl mb-8 text-amber-100">
+              At Vikash Tech Solutions, you don&apos;t just learn code — you engage in practical exercises that reflect real-world scenarios.
+            </p>
             <div className="flex gap-6 justify-center">
               <Link href="/courses" 
                 className="bg-gradient-to-r from-amber-400 to-yellow-300 text-indigo-900 px-8 py-4 rounded-full font-semibold hover:from-amber-500 hover:to-yellow-400 transition-all duration-300 hover:scale-105 shadow-lg text-lg">
@@ -140,9 +142,9 @@ export default function Home() {
       <section className="py-24 bg-gradient-to-r from-indigo-900 to-purple-900 text-white relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">Why Choose CodersHub?</h2>
-            <p className="text-amber-100 text-lg">
-              We provide a comprehensive learning experience designed to help you succeed in your coding journey.
+            <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">Why Choose Vikash Tech Solutions?</h2>
+            <p className="text-gray-600 text-xl mb-8">
+              Join thousands of students who have already transformed their careers with Vikash Tech Solutions.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
