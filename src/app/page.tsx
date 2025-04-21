@@ -117,7 +117,11 @@ export default function Home() {
             </div>
             <div className="p-6 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-amber-100 group">
               <div className="w-full h-64 rounded-t-2xl flex items-center justify-center overflow-hidden bg-gray-100">
-                <p className="text-gray-500"></p>
+                <img 
+                  src="/Images/ds.jpg" 
+                  alt="Data Structures and Algorithms" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-4 text-indigo-900">Data Structures & Algorithms</h3>

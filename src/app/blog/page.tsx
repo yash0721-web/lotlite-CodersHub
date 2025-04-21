@@ -250,7 +250,7 @@ export default function BlogPage() {
   };
 
   return (
-    <main className="min-h-screen pt-20 pb-16">
+    <main className="min-h-screen pt-8 pb-16">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-indigo-900 via-purple-800 to-pink-700 text-white py-20 relative overflow-hidden">
         {/* Decorative elements */}
