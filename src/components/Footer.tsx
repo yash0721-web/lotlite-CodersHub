@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { FaGithub, FaTwitter, FaLinkedin, FaFacebook, FaArrowUp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaArrowUp } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 
 const Footer = () => {
@@ -34,20 +34,17 @@ const Footer = () => {
           {/* Company Info */}
           <div className="transform hover:scale-105 transition-transform duration-300">
             <h3 className="text-xl font-bold mb-4 relative inline-block">
-              CodersHub
+              Vikash Tech Solutions
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
             </h3>
             <p className="text-gray-400 mb-4">
-              Empowering developers with the best coding resources and community.
+              Vikash Tech Solutions is a platform dedicated to helping developers learn and grow in their careers.
             </p>
             <div className="flex space-x-4">
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110">
                 <FaGithub size={24} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110">
-                <FaTwitter size={24} />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110">
+              <a href="https://www.linkedin.com/in/vikash-dubey-517461262/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110">
                 <FaLinkedin size={24} />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110">
@@ -196,7 +193,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} CodersHub. All rights reserved.</p>
+          <p>&copy; {currentYear} Vikash Tech Solutions. All rights reserved.</p>
         </div>
       </div>
 

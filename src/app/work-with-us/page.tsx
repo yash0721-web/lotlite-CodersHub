@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Work With Us | CodersHub',
+  title: 'Work With Us | Vikash Tech Solutions',
   description: 'Join our team or partner with us to create amazing coding education experiences.',
 };
 
