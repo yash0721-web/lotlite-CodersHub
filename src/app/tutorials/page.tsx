@@ -94,6 +94,36 @@ const tutorials = [
     category: "Database",
     featured: false,
     createdAt: "2024-03-07"
+  },
+  {
+    id: 10,
+    title: "Devops Tutorial",
+    description: "DevOps is a practice that combines software development and IT operations. It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.",
+    thumbnail: "/Images/devops-2.png",
+    slug: "devops-tutorial",
+    category: "Devops",
+    featured: false,
+    createdAt: "2024-03-07"
+  },
+  {
+    id: 11,
+    title: "API's Tutorial",
+    description: "API's are a way to connect different parts of your application. It is a tool that allows you to create, deploy, and run applications in containers.",
+    thumbnail: "/Images/postman.png",
+    slug: "api-tutorial",
+    category: "API's",
+    featured: false,
+    createdAt: "2024-03-07"
+  },
+  {
+    id: 12,
+    title: "Cloud Computing Tutorial",
+    description: "Cloud computing is a way to connect different parts of your application. It is a tool that allows you to create, deploy, and run applications in containers.",
+    thumbnail: "/Images/google-cloud-3.png",
+    slug: "cloud-computing-tutorial",
+    category: "Cloud Computing",
+    featured: false,
+    createdAt: "2024-03-07"
   }
 ];
 
@@ -101,7 +131,10 @@ const categories = [
   "All Tutorials",
   "Web Development",
   "Programming",
-  "Database"
+  "Database",
+  "Devops",
+  "API's",
+  "Cloud Computing"
 ];
 
 export default function TutorialsPage() {
