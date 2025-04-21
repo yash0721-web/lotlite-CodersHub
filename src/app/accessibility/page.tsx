@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Accessibility Statement | CodersHub',
-  description: 'Accessibility statement for CodersHub platform and services.',
+  title: 'Accessibility Statement | Vikash Tech Solutions',
+  description: 'Accessibility statement for Vikash Tech Solutions platform and services.',
 };
 
 export default function AccessibilityPage() {
@@ -16,7 +16,7 @@ export default function AccessibilityPage() {
           <div className="space-y-6 text-gray-600">
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-4">1. Our Commitment</h2>
-              <p>CodersHub is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.</p>
+              <p>Vikash Tech Solutions is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.</p>
             </section>
 
             <section>

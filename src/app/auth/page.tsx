@@ -28,7 +28,7 @@ export default function AuthPage() {
       <div className="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-lg p-8">
           <div className="flex justify-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900">CodersHub</h1>
+            <h1 className="text-3xl font-bold text-gray-900">Vikash Tech Solutions</h1>
           </div>
           
           <div className="mb-8">

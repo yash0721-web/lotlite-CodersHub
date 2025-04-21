@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Terms of Service | CodersHub',
-  description: 'Terms and conditions for using CodersHub platform and services.',
+  title: 'Terms of Service | Vikash Tech Solutions',
+  description: 'Terms and conditions for using Vikash Tech Solutions platform and services.',
 };
 
 export default function TermsPage() {
@@ -16,27 +16,27 @@ export default function TermsPage() {
           <div className="space-y-6 text-gray-600">
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-4">1. Acceptance of Terms</h2>
-              <p>By accessing and using CodersHub, you accept and agree to be bound by the terms and provision of this agreement.</p>
+              <p>By accessing and using Vikash Tech Solutions, you accept and agree to be bound by the terms and provision of this agreement.</p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-4">2. Use License</h2>
-              <p>Permission is granted to temporarily access the materials (information or software) on CodersHub's website for personal, non-commercial transitory viewing only.</p>
+              <p>Permission is granted to temporarily access the materials (information or software) on Vikash Tech Solutions's website for personal, non-commercial transitory viewing only.</p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-4">3. Disclaimer</h2>
-              <p>The materials on CodersHub's website are provided on an 'as is' basis. CodersHub makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+              <p>The materials on Vikash Tech Solutions's website are provided on an 'as is' basis. Vikash Tech Solutions makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-4">4. Limitations</h2>
-              <p>In no event shall CodersHub or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on CodersHub's website.</p>
+              <p>In no event shall Vikash Tech Solutions or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Vikash Tech Solutions's website.</p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-4">5. Revisions and Errata</h2>
-              <p>The materials appearing on CodersHub's website could include technical, typographical, or photographic errors. CodersHub does not warrant that any of the materials on its website are accurate, complete or current.</p>
+              <p>The materials appearing on Vikash Tech Solutions's website could include technical, typographical, or photographic errors. Vikash Tech Solutions does not warrant that any of the materials on its website are accurate, complete or current.</p>
             </section>
           </div>
           
